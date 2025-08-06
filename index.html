@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Curso Creación de Videos con IA | Método KREO IA Studio</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #D1D5DB; /* gray-300 */
+            background-color: #111827; /* gray-900 */
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #9A3412 0%, #F97316 50%, #2dd4bf 100%); /* orange-800, orange-500, teal-400 */
+        }
+        
+        .feature-card {
+            background-color: #1F2937; /* gray-800 */
+            border: 1px solid #374151; /* gray-700 */
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(139, 92, 246, 0.3); /* violet-500 glow */
+            border-color: #8b5cf6;
+        }
+        
+        .testimonial-card {
+            background-color: #1F2937; /* gray-800 */
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #374151;
+        }
+        
+        .cta-section {
+            /* CAMBIO: Fondo actualizado a un naranja oscuro */
+            background-color: #7c2d12; /* orange-900 */
+            color: #FFFFFF;
+        }
+        
+        .btn-primary {
+            background-color: #374151; 
+            color: #FB923C;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #FFFFFF; /* violet-600 */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+        }
+        
+        .btn-orange-pastel {
+            background-color: #FB923C; /* orange-400 */
+            color: #FFFFFF;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-orange-pastel:hover {
+            background-color: #F97316; /* orange-500 */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(251, 146, 60, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid #FFFFFF;
+            color: #FFFFFF;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+<!-- Header/Navigation -->
+<header class="bg-gray-900 bg-opacity-80 shadow-lg fixed w-full z-20 backdrop-filter backdrop-blur-md">
+<div class="container mx-auto px-4 py-4 flex justify-between items-center">
+<div class="flex items-center">
+<h1 class="text-2xl font-bold text-white">KREO <span class="text-violet-400">IA</span> STUDIO</h1>
+</div>
+<nav class="hidden md:flex space-x-8">
+<a class="text-gray-300 hover:text-violet-400 font-medium transition duration-300" href="#about">El Método</a>
+<a class="text-gray-300 hover:text-violet-400 font-medium transition duration-300" href="#kia">Conoce a KIA</a>
+<a class="text-gray-300 hover:text-violet-400 font-medium transition duration-300" href="#workflow">Flujo de Trabajo</a>
+<a class="text-gray-300 hover:text-violet-400 font-medium transition duration-300" href="#difference">¿Por qué KREO?</a>
+</nav>
+<div class="md:hidden">
+<button class="text-gray-300 focus:outline-none">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-gradient pt-32 pb-20">
+<div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-10 md:mb-0">
+<h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">Creación de Videos con IA</h1>
+<h2 class="text-2xl md:text-3xl font-medium text-orange-200 mb-8">El Método KREO IA Studio</h2>
+<p class="text-xl text-white opacity-90 mb-10">Domina el flujo de trabajo completo, desde la idea hasta el video final, y aprende a crear contenido con un pulido, consistencia y control visual sin precedentes. Profesionaliza tu uso de la IA.</p>
+<div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+<a class="btn-primary text-center" href="#register">Inscríbete al Curso</a>
+<a class="btn-secondary text-center" href="#workflow">Ver el Flujo de Trabajo</a>
+</div>
+</div>
+<div class="md:w-1/2 flex justify-center">
+<div class="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-orange-400 shadow-2xl shadow-orange-500/20">
+<img alt="KREO IA Studio Logo" class="w-full h-full object-cover" src="images/logo.png"/>
+</div>
+</div>
+</div>
+</section>
+<!-- About the Method Section -->
+<section class="py-20 bg-gray-900" id="about">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-white mb-4">¿Qué es el Método KREO IA Studio?</h2>
+<p class="text-xl text-gray-400 max-w-3xl mx-auto">Nuestro método se fundamenta en tres pilares esenciales que diferencian el contenido amateur del profesional: el pulido técnico, la consistencia visual y el control creativo absoluto.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="feature-card p-8 rounded-lg">
+<div class="text-violet-400 text-4xl mb-4">
+<i class="fas fa-magic"></i>
+</div>
+<h3 class="text-xl font-bold text-white mb-3">Pulido Técnico Profesional</h3>
+<p class="text-gray-400">Vamos más allá de la generación inicial. Aprende a aplicar técnicas de post-producción avanzadas para corregir imperfecciones y asegurar que el resultado final sea indistinguible de una producción de alta gama.</p>
+</div>
+<div class="feature-card p-8 rounded-lg">
+<div class="text-violet-400 text-4xl mb-4">
+<i class="fas fa-link"></i>
+</div>
+<h3 class="text-xl font-bold text-white mb-3">Consistencia Visual y Narrativa</h3>
+<p class="text-gray-400">La clave para narrativas creíbles. Mantenemos una coherencia estricta en personajes, estilo, paleta de colores e iluminación a lo largo de toda la producción, usando prompts detallados y face-swap estratégico.</p>
+</div>
+<div class="feature-card p-8 rounded-lg">
+<div class="text-violet-400 text-4xl mb-4">
+<i class="fas fa-crosshairs"></i>
+</div>
+<h3 class="text-xl font-bold text-white mb-3">Control Creativo Absoluto</h3>
+<p class="text-gray-400">Cada elemento visual debe ser intencional. Te enseñamos a dictar con precisión el resultado deseado, en lugar de depender de la aleatoriedad de la IA, seleccionando la herramienta adecuada para cada tarea.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- KIA Section -->
+<section class="py-20 bg-gray-800" id="kia">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 mb-10 md:mb-0 flex justify-center">
+<video class="rounded-lg shadow-2xl max-w-sm h-auto"
+       autoplay muted playsinline loop controls preload="metadata"
+       poster="images/kia.png" aria-label="Avatar KIA, tu mentora de IA">
+  <source src="images/saludokia.mp4" type="video/mp4">
+  Tu navegador no soporta video HTML5.
+</video>
+</div>
+<div class="md:w-1/2 md:pl-12">
+<h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Conoce a <span class="text-violet-400">KIA</span>, tu Mentora IA</h2>
+<p class="text-xl text-gray-300 mb-6">KIA (Kreo IA Studio Avatar) es tu mentora IA dedicada. Diseñada para la claridad y la creatividad, encarna los principios de nuestro método: precisión, pulido estético y control. KIA no es solo una guía; es tu socia creativa, disponible 24/7 para ayudarte a navegar la complejidad de la producción con IA.</p>
+<div class="mb-6">
+<h3 class="text-xl font-bold text-violet-400 mb-3">Tu Soporte Personalizado</h3>
+<ul class="space-y-3 text-gray-300">
+<li class="flex items-start">
+<i class="fas fa-check-circle text-teal-400 mt-1 mr-3"></i>
+<span>Consultas asincrónicas a través de tu avatar KIA en HeyGen.</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-teal-400 mt-1 mr-3"></i>
+<span>Respuestas personalizadas sobre el flujo de trabajo y las herramientas.</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-teal-400 mt-1 mr-3"></i>
+<span>Aclaraciones técnicas sobre Sora, Kling AI, Photoshop, Minimax Audio y más.</span>
+</li>
+<li class="flex items-start">
+<i class="fas fa-check-circle text-teal-400 mt-1 mr-3"></i>
+<span>Consejos prácticos para mantener el pulido estético y la coherencia visual.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Workflow Section -->
+<section class="py-20 bg-gray-900" id="workflow">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Nuestro Flujo de Trabajo Profesional</h2>
+<p class="text-xl text-gray-400 max-w-3xl mx-auto">Un proceso iterativo y multifacético que integra las mejores herramientas de IA y edición tradicional en un método paso a paso.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Step 1-2 -->
+<div class="bg-gray-800 p-6 rounded-lg border-t-4 border-violet-500">
+<div class="text-2xl font-bold text-violet-400 mb-2">Paso 1 & 2</div>
+<h3 class="text-lg font-semibold text-white mb-2">Concepto e Imágenes Base</h3>
+<p class="text-gray-400 text-sm">Todo empieza con un guion detallado y la generación de imágenes clave con herramientas como Sora, Kling o VEO3, asegurando consistencia desde el inicio.</p>
+</div>
+<!-- Step 3-4 -->
+<div class="bg-gray-800 p-6 rounded-lg border-t-4 border-violet-500">
+<div class="text-2xl font-bold text-violet-400 mb-2">Paso 3 & 4</div>
+<h3 class="text-lg font-semibold text-white mb-2">Pulido y Coherencia Facial</h3>
+<p class="text-gray-400 text-sm">Refinamos cada imagen en Photoshop para corregir detalles y usamos Face Swap para garantizar que los rostros de los personajes sean idénticos en cada toma.</p>
+</div>
+<!-- Step 5-6 -->
+<div class="bg-gray-800 p-6 rounded-lg border-t-4 border-violet-500">
+<div class="text-2xl font-bold text-violet-400 mb-2">Paso 5 & 6</div>
+<h3 class="text-lg font-semibold text-white mb-2">Animación y Creación de Voz</h3>
+<p class="text-gray-400 text-sm">Damos vida a los personajes con la herramienta de animación adecuada (Dreamina, Kling) y creamos voces realistas o clonadas con Minimax Audio.</p>
+</div>
+<!-- Step 7-8 -->
+<div class="bg-gray-800 p-6 rounded-lg border-t-4 border-violet-500">
+<div class="text-2xl font-bold text-violet-400 mb-2">Paso 7 & 8</div>
+<h3 class="text-lg font-semibold text-white mb-2">Edición y Proyecto Final</h3>
+<p class="text-gray-400 text-sm">Ensamblamos todos los elementos en CapCut, aplicamos edición avanzada (J-Cuts, L-Cuts, color grading) y exportamos el video final optimizado para cada plataforma.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Difference Section -->
+<section class="py-20 bg-gray-800" id="difference">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-white mb-4">¿Por qué KREO es Diferente?</h2>
+<p class="text-xl text-gray-400 max-w-3xl mx-auto">No solo te enseñamos a usar herramientas, te enseñamos a pensar como un director creativo que utiliza la IA para producir obras de alta calidad.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+<div class="flex">
+<div class="flex-shrink-0 mr-4"><div class="bg-violet-500 text-white rounded-full w-12 h-12 flex items-center justify-center"><i class="fas fa-star"></i></div></div>
+<div>
+<h3 class="text-xl font-bold text-white mb-3">Enfoque en la Calidad, no en la Cantidad</h3>
+<p class="text-gray-400">Priorizamos el pulido y la calidad profesional sobre la generación masiva de contenido mediocre. Cada fotograma cuenta.</p>
+</div>
+</div>
+<div class="flex">
+<div class="flex-shrink-0 mr-4"><div class="bg-violet-500 text-white rounded-full w-12 h-12 flex items-center justify-center"><i class="fas fa-tools"></i></div></div>
+<div>
+<h3 class="text-xl font-bold text-white mb-3">Integración de Herramientas</h3>
+<p class="text-gray-400">Te enseñamos un flujo de trabajo que integra de manera inteligente múltiples plataformas especializadas (Photoshop, CapCut, etc.) para un resultado superior.</p>
+</div>
+</div>
+<div class="flex">
+<div class="flex-shrink-0 mr-4"><div class="bg-violet-500 text-white rounded-full w-12 h-12 flex items-center justify-center"><i class="fas fa-brain"></i></div></div>
+<div>
+<h3 class="text-xl font-bold text-white mb-3">Mentalidad de Director Creativo</h3>
+<p class="text-gray-400">Aprende los principios fundamentales de calidad, coherencia estética y narrativa para tomar decisiones creativas informadas en cada paso.</p>
+</div>
+</div>
+<div class="flex">
+<div class="flex-shrink-0 mr-4"><div class="bg-violet-500 text-white rounded-full w-12 h-12 flex items-center justify-center"><i class="fas fa-user-astronaut"></i></div></div>
+<div>
+<h3 class="text-xl font-bold text-white mb-3">Soporte con tu Mentora IA</h3>
+<p class="text-gray-400">No estás solo. KIA está disponible para resolver tus dudas, ofreciendo una experiencia de aprendizaje interactiva y de vanguardia.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-20 bg-gray-900">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Lo que Dicen Nuestros Creadores</h2>
+<p class="text-xl text-gray-400 max-w-3xl mx-auto">Experiencias de quienes ya han transformado su manera de crear con el Método KREO.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="testimonial-card">
+<p class="text-gray-300 mb-6">"Antes de este curso, mis personajes cambiaban en cada clip. El Módulo 4 de Face Swap y los prompts de consistencia lo cambiaron todo. ¡Mis historias por fin son creíbles!"</p>
+<div class="font-medium">
+<p class="text-white">Elena Valdés</p>
+<p class="text-gray-500 text-sm">Directora de Cortometrajes</p>
+</div>
+</div>
+<div class="testimonial-card">
+<p class="text-gray-300 mb-6">"El flujo de trabajo que enseñan, integrando Photoshop para el pulido, elevó la calidad de mis producciones a un nivel que no creía posible con IA. Es un cambio de juego total."</p>
+<div class="font-medium">
+<p class="text-white">Javier Ríos</p>
+<p class="text-gray-500 text-sm">Creador de Contenido</p>
+</div>
+</div>
+<div class="testimonial-card">
+<p class="text-gray-300 mb-6">"Tener a KIA para resolver dudas es increíble. Le pregunté sobre la integración de Minimax Audio y me dio una respuesta clara y directa en video. El futuro de la educación."</p>
+<div class="font-medium">
+<p class="text-white">Sofía Navarro</p>
+<p class="text-gray-500 text-sm">Artista Digital</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="cta-section py-20" id="register">
+<div class="container mx-auto px-4 text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para Crear a Nivel Profesional?</h2>
+<p class="text-xl opacity-90 max-w-3xl mx-auto mb-10">Únete a la comunidad de KREO IA Studio y transforma tu manera de producir contenido audiovisual. Obtén las habilidades para destacar en la era de la IA.</p>
+<div class="max-w-md mx-auto bg-gray-800 rounded-lg p-6 shadow-lg">
+<!-- === FORMULARIO CORREGIDO === -->
+<form name="contact" method="POST" netlify netlify-honeypot="bot-field" action="gracias.html" class="space-y-4">
+  <!-- Honeypot anti-bots (campo oculto para engañar a los bots) -->
+  <p class="hidden">
+    <label>No rellenes este campo: <input name="bot-field" /></label>
+  </p>
+
+  <!-- Campo oculto para el nombre del formulario que Netlify necesita -->
+  <input type="hidden" name="form-name" value="contact" />
+
+  <div>
+    <label for="name" class="block text-gray-300 text-sm font-medium mb-1 text-left">Nombre completo</label>
+    <input id="name" name="name" type="text" required
+           class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 text-white" />
+  </div>
+
+  <div>
+    <label for="email" class="block text-gray-300 text-sm font-medium mb-1 text-left">Correo electrónico</label>
+    <input id="email" name="email" type="email" required
+           class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 text-white" />
+  </div>
+
+  <div>
+    <label for="experience-level" class="block text-gray-300 text-sm font-medium mb-1 text-left">Tu nivel de experiencia con IA</label>
+    <select id="experience-level" name="experience-level" required
+            class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 text-white">
+      <option value="">Selecciona una opción</option>
+      <option value="Principiante">Principiante en IA</option>
+      <option value="Casual">Uso IA de forma casual</option>
+      <option value="Pro">Busco profesionalizar mi uso</option>
+    </select>
+  </div>
+
+  <button type="submit" class="w-full btn-orange-pastel">¡Quiero Inscribirme Ahora!</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between">
+<div class="mb-8 md:mb-0">
+<h3 class="text-2xl font-bold mb-4">KREO <span class="text-violet-400">IA</span> STUDIO</h3>
+<p class="text-gray-400 max-w-xs">Creando el futuro de la producción audiovisual con métodos profesionales y tecnología de vanguardia.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+<div>
+<h4 class="text-lg font-semibold mb-4">Enlaces</h4>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-white transition duration-300" href="#about">El Método</a></li>
+<li><a class="text-gray-400 hover:text-white transition duration-300" href="#kia">Conoce a KIA</a></li>
+<li><a class="text-gray-400 hover:text-white transition duration-300" href="#workflow">Flujo de Trabajo</a></li>
+<li><a class="text-gray-400 hover:text-white transition duration-300" href="#register">Inscribirse</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Contacto</h4>
+<ul class="space-y-2">
+<li class="flex items-center">
+<i class="fas fa-envelope mr-2 text-violet-400"></i>
+<a class="text-gray-400 hover:text-white transition duration-300" href="mailto:kreoiastudioperu@gmail.com">kreoiastudioperu@gmail.com</a>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Síguenos</h4>
+<div class="flex space-x-4">
+<a class="text-gray-400 hover:text-white transition duration-300" href="https://www.facebook.com/share/1ZRd9NTwKZ/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f text-xl"></i></a>
+<a class="text-gray-400 hover:text-white transition duration-300" href="https://www.tiktok.com/@kreo_ai_studio?_t=ZS-8yeddjxAOds&_r=1" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok text-xl"></i></a>
+<a class="text-gray-400 hover:text-white transition duration-300" href="https://www.instagram.com/kreoiastudio?igsh=a3QwbjNmM3F4ejVu" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram text-xl"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+<p>© 2024 KREO IA STUDIO. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
